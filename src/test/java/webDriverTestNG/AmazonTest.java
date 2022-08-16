@@ -47,5 +47,9 @@ public class AmazonTest {
 		    wd.findElement(By.id("twotabsearchtextbox")).sendKeys("bestselling books 2022");
 		    Thread.sleep(5000);
 		    wd.findElement(By.id("nav-search-submit-button")).submit();
+		    wd.findElement(By.linkText("Sparring Partners: Novellas")).click();
+		    
+		    //if logged in this will add item to cart
+	        //wd.findElement(By.id("add-to-cart-button")).click();
 	  }
 }
